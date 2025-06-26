@@ -148,7 +148,7 @@ void menu() {
 
         cin >> pilihan;
 
-        // Tangani input tidak valid (bukan angka)
+        
         if (cin.fail()) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -156,13 +156,13 @@ void menu() {
             continue;
         }
 
-        // Tangani input angka di luar rentang 0–6
+       
         if (pilihan < 0 || pilihan > 6) {
             cout << "Pilihan tidak valid! Harap masukkan angka antara 0-6.\n";
             continue;
         }
 
-        // Jalankan menu sesuai pilihan
+        
         switch (pilihan) {
             case 1:
                 tambahProyek();
